@@ -3,7 +3,7 @@ const path = require('path');
 const jwt = require('jsonwebtoken');
 
 // Load the RSA public key
-const publicKey = fs.readFileSync('public.pem', 'utf8');
+const publicKey = fs.readFileSync('conf/public.pem', 'utf8');
 // fs.readFileSync("private.pem", "utf8")
 
 // The JWT token you provided

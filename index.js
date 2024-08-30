@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 
 // Load RSA keys
-const RSA_PRIVATE_KEY = fs.readFileSync("private.pem", "utf8");
-const RSA_PUBLIC_KEY = fs.readFileSync("public.pem", "utf8");
+const RSA_PRIVATE_KEY = fs.readFileSync("conf/private.pem", "utf8");
+const RSA_PUBLIC_KEY = fs.readFileSync("conf/public.pem", "utf8");
 
 const HMAC_SECRET_KEY = "secret-key"; // Use a strong secret
 const TOKEN_EXPIRATION_TIME = "15m";
